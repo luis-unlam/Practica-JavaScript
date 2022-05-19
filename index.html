@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Sumar y Restar</title>
 </head>
 <body>
-    <script src="app.js"></script>
+
+    <section class="contenido_suma_resta">
+        <h1>SUMAS Y RESTAS</h1>
+        <div class="caja_principal">
+            <div class="caja_principal_suma">
+                <h2>SUMA</h2>
+                <h3>Ingresa el vector:</h3>
+                <input name="ingresa_vector" type="text" id="valor1" value="[]" />
+                <h3>Ingresa el numero:</h3>
+                <input name="ingresa_vector" type="text" id="valor2" value="" />
+                <button class="button_suma" onclick="sumar()">SUMAR</button>
+            </div>
+
+            <div class="caja_principal_resta">
+                <h2>RESTA</h2>
+                <h3>Ingresa el vector:</h3>
+                <input name="ingresa_vector" type="text" value="[]" />
+                <h3>Ingresa el numero:</h3>
+                <input name="ingresa_vector" type="text" value="" />
+                <button class="button_resta" onclick="restar()">RESTAR</button>
+            </div>
+        </div>
+        <div class="resultados">
+            <h3>Resultado</h3>
+            <input name="resultado" type="text" value="" />
+        </div>
+
+
+    </section>
+
+    <!--<script src="app.js"></script>-->
+    <!--<script src="num_rom.js"></script>-->
+    <script src="paridad_pareja.js"></script>
+
 </body>
 </html>

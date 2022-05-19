@@ -1,0 +1,33 @@
+.contenido_suma_resta{
+    background-color: cornsilk;
+    height: 1024PX;
+}
+.contenido_suma_resta h1{
+    text-align: center;
+}
+.caja_principal{
+    display: flex;
+}
+.caja_principal_suma {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.caja_principal_resta {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.button_suma{
+    margin-top: 10%;
+}
+.button_resta{
+    margin-top: 10%;
+}
+.resultados{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
