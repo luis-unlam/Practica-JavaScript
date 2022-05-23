@@ -65,13 +65,13 @@ rButton.addEventListener("click" , function(){
 
 
 function imprimirResultadoSuma(array,number){
-    //let arrrayS=array.split(',').map(Number);
+    let arrrayS=array.split(',').map(Number);
     //let resultado2=sumar(arrrayS,number);
     resultadoS.innerHTML="<p>" + sumar(arrrayS,number) +  "</p>"
 }
 
 function imprimirResultadoResta(array,number){
-    //let arrrayR=array.split(',').map(Number);
+    let arrrayR=array.split(',').map(Number);
     //let resultado2=restar(arrrayR,number);
     resultadoR.innerHTML="<p>" + restar(arrrayR,number) +  "</p>"
 }
