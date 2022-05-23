@@ -49,30 +49,49 @@ console.log(b);
 }*/
 //////////////////////////////////////////SUMA Y RESTA////////////////////////////////////////////
 
-number1=[1,0];
-number2=8;
+//number1=[1,0,0];
+//number2=25;
+/*
+const selection=document.querySelector("#selection");
+const ej_1_container=document.querySelector(".suma_resta");
+selection.addEventListener("change",function(){
+    if(selection.value == "sumayresta"){
+        ej_1_container.style="display: block"
+    }
+    else{
+        ej_1_container.style="display: none"
+    } 
+})
+
+const sButton=document.querySelector("#sumaButton");
+let number1_s=document.querySelector("#valor1_s");
+let number2_s=document.querySelector("#valor2_s");
+
+
+
+
+sButton.addEventListener("click" , function(){
+    console.log(number1_s.value);
+    let valorx=[];
+    valorx=parseInt(number1_s.split(","));
+    console.log(valorx);
+    //sumar(number1_s,number2_s);
+})*/
+
+
+
 
 function sumar(array,number){
     let valor1=parseInt(array.join(""));
     let valor2=parseInt(number);
     let suma=valor1+valor2;
-    //let sumaF1=suma.toString().split('');
     let sumaF2=suma.toString();
     let indi=sumaF2.length;
     var resultado=[];
     for(i=0;i<indi;i++){
         resultado.push(parseInt(sumaF2[i]));
     }
-    /*let nuevoArray=[];
-    sumaF1.forEach(element => {
-        nuevoArray.push(parseInt(element));
-    })*/
-    //console.log(nuevoArray);
-    console.log(resultado);
-    console.log(valor1);
-    console.log(valor2);
-    console.log(suma);
-    console.log(indi);
+    return resultado;
 }
 function restar(array,number){
     let valor1=parseInt(array.join(""));
@@ -91,5 +110,5 @@ function restar(array,number){
     }
     console.log(resultado);
 }
-sumar(number1,number2);
-restar(number1,number2);
+//sumar(number1,number2);
+//restar(number1,number2);

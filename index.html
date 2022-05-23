@@ -9,38 +9,118 @@
 </head>
 <body>
 
-    <section class="contenido_suma_resta">
-        <h1>SUMAS Y RESTAS</h1>
-        <div class="caja_principal">
-            <div class="caja_principal_suma">
-                <h2>SUMA</h2>
-                <h3>Ingresa el vector:</h3>
-                <input name="ingresa_vector" type="text" id="valor1" value="[]" />
-                <h3>Ingresa el numero:</h3>
-                <input name="ingresa_vector" type="text" id="valor2" value="" />
-                <button class="button_suma" onclick="sumar()">SUMAR</button>
-            </div>
+    <section class="selection_conten">
+        <h1>Seleccione el ejercicio</h1>
+        <div class="select">
+            <select name="selection" id="selection">
+                <option value="default">Elije un ejercicio</option>
+                <option value="sumayresta">Suma y Resta</option>
+                <option value="paridad">Paridad y Pareja</option>
+                <option value="palindromo">Palindromo</option>
+                <option value="romanos">Numeros romanos</option>
+            </select>
+        </div>
 
-            <div class="caja_principal_resta">
-                <h2>RESTA</h2>
-                <h3>Ingresa el vector:</h3>
-                <input name="ingresa_vector" type="text" value="[]" />
-                <h3>Ingresa el numero:</h3>
-                <input name="ingresa_vector" type="text" value="" />
-                <button class="button_resta" onclick="restar()">RESTAR</button>
+
+
+        <div class="suma_resta">
+            <div class="caja_principal">
+                <div class="caja_principal_suma">
+                    <h2>SUMA</h2>
+                    <h3>Ingresa el vector:</h3>
+                    <input name="ingresa_vector" type="text" id="valor1_s" value="" />
+                    <h3>Ingresa el numero:</h3>
+                    <input name="ingresa_vector" type="text" id="valor2_s" value="" />
+                    <button class="button_suma" id="sumaButton">SUMAR</button>
+                </div>
+                <div class="caja_principal_resta">
+                    <h2>RESTA</h2>
+                    <h3>Ingresa el vector:</h3>
+                    <input name="ingresa_vector" type="text" id="valor1_r" value="" />
+                    <h3>Ingresa el numero:</h3>
+                    <input name="ingresa_vector" type="text" id="valor2_r" value="" />
+                    <button class="button_resta" id="restaButton">RESTAR</button>
+                </div>
+            </div>
+            <div class="resultados">
+                <h3>Resultado suma</h3>
+                <div id="resultadoSuma"></div>
+                <h3>Resultado resta</h3>
+                <div id="resultadoResta"></div>
             </div>
         </div>
-        <div class="resultados">
-            <h3>Resultado</h3>
-            <input name="resultado" type="text" value="" />
+
+
+
+        <div class="paridad_pareja">
+            <div class="caja_principal">
+                <div class="caja_principal_par">
+                    <h2>Paridad y Pareja</h2>
+                    <h3>Ingresa el vector:</h3>
+                    <input name="ingresa_vector" type="text" id="valor1_s" value="" />
+                    <button class="button_suma" id="sumaButton">EJECUTE</button>
+                </div>
+            </div>
+            <div class="resultados_parejas">
+                <h3>numeros pares</h3>
+                <input name="resultado_pares" type="text" value="" class="resultado_p" />
+                <h3>combinaciones</h3>
+                <input name="resultado_combin" type="text" value="" class="resultado_c" />
+            </div>
         </div>
+
+
+
+
+        <div class="palindromo">
+            <div class="caja_principal">
+                <div class="caja_principal_par">
+                    <h2>palindromo</h2>
+                    <h3>Ingresa el vector:</h3>
+                    <input name="ingresa_vector" type="text" id="valor1_s" value="" />
+                    <button class="button_suma" id="sumaButton">EJECUTE</button>
+                </div>
+            </div>
+            <div class="resultados_parejas">
+                <h3>Podria ser palindromo?</h3>
+                <input name="resultado_pares" type="text" value="" class="resultado_p" />
+                <h3>combinaciones</h3>
+                <input name="resultado_combin" type="text" value="" class="resultado_c" />
+            </div>
+        </div>
+
+
+        <div class="romanos">
+            <div class="caja_principal">
+                <div class="caja_principal_par">
+                    <h2>Numeros romanos</h2>
+                    <h3>Ingresa el numero:</h3>
+                    <input name="ingresa_vector" type="text" id="valor1_s" value="" />
+                    <button class="button_suma" id="sumaButton">EJECUTE</button>
+                </div>
+            </div>
+            <div class="resultados_parejas">
+                <h3>Numero en romanos</h3>
+                <input name="resultado_pares" type="text" value="" class="resultado_p" />
+                <h3>combinaciones</h3>
+                <input name="resultado_combin" type="text" value="" class="resultado_c" />
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
 
 
     </section>
 
-    <!--<script src="app.js"></script>-->
+    <script src="app.js"></script>
     <!--<script src="num_rom.js"></script>-->
-    <script src="paridad_pareja.js"></script>
+    <!--<script src="paridad_pareja.js"></script>-->
+    <script src="sumaresta.js"></script>
 
 </body>
 </html>

@@ -1,9 +1,22 @@
-.contenido_suma_resta{
+/*//////////////////////suma y resta//////////////////////*/
+*{
+    box-sizing: border-box;
+}
+.selection_conten{
     background-color: cornsilk;
+    
     height: 1024PX;
 }
-.contenido_suma_resta h1{
+.select{
     text-align: center;
+}
+.selection_conten h1{
+    text-align: center;
+}
+.suma_resta{
+    margin-top: 40px;
+    /*background-image: url('img/images1.jpg');*/
+    background-color: darkseagreen;
 }
 .caja_principal{
     display: flex;
@@ -27,7 +40,27 @@
     margin-top: 10%;
 }
 .resultados{
-    margin-top: 15%;
+    margin-top: 8%;
     display: flex;
     justify-content: center;
+    gap: 50px;
+}
+.resultado{
+   
+}
+
+/*//////////////////////pares y impares//////////////////////*/
+.paridad_pareja{
+    margin-top: 40px;
+    background-color: cadetblue;
+}
+/*//////////////////////palindromo//////////////////////*/
+.palindromo{
+    margin-top: 40px;
+    background-color: greenyellow;
+}
+/*//////////////////////romanos//////////////////////*/
+.romanos{
+    margin-top: 40px;
+    background-color: lightcoral;
 }
